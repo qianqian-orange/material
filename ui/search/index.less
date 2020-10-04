@@ -1,0 +1,39 @@
+.elm-search {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.elm-search-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-top: 0;
+  .px2rem(padding-right, 60);
+  padding-bottom: 0;
+  .px2rem(padding-left, 60);
+  border-width: 0;
+  color: #222;
+  .px2rem(font-size, 28);
+  outline: none;
+  // 可以去除默认样式
+  appearance: none;
+}
+
+.elm-search-input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.elm-search-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &.search {
+    .px2rem(left, 16);
+  }
+
+  &.clear {
+    .px2rem(right, 16);
+  }
+}

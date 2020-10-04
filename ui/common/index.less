@@ -1,0 +1,11 @@
+@import "./var.less";
+@import "./mixin.less";
+@import "./reset.less";
+
+.clear-fix::before,
+.clear-fix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
