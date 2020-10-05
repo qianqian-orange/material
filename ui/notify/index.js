@@ -15,6 +15,7 @@ let id = null
 function core(type, message, duration) {
   const el = createElement(type, message)
   transition(el, duration)
+  // eslint-disable-next-line
   core = function (type, message, duration) {
     // 修改文本内容
     el.innerText = message
