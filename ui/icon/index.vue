@@ -49,7 +49,7 @@ export default {
         car: 'icon-cart',
         increase: 'icon-add',
         decrease: 'icon-remove',
-        'solid-arrow': 'icon-arrowdown-copy',
+        'solid-arrow': 'icon-arrowup',
       },
     }
   },
