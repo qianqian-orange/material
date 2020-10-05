@@ -1,3 +1,65 @@
 .px2rem (@name, @px) {
   @{name}: @px / @baseFontSize * 1rem;
 }
+
+.padding-top (@px) {
+  .px2rem(padding-top, @px);
+}
+
+.padding-right (@px) {
+  .px2rem(padding-right, @px);
+}
+
+.padding-bottom (@px) {
+  .px2rem(padding-bottom, @px);
+}
+
+.padding-left (@px) {
+  .px2rem(padding-left, @px);
+}
+
+.padding (@top, @right, @bottom, @left) {
+  .px2rem(padding-top, @top);
+  .px2rem(padding-right, @right);
+  .px2rem(padding-bottom, @bottom);
+  .px2rem(padding-left, @left);
+}
+
+.margin-top (@px) {
+  .px2rem(margin-top, @px);
+}
+
+.margin-right (@px) {
+  .px2rem(margin-right, @px);
+}
+
+.margin-bottom (@px) {
+  .px2rem(margin-bottom, @px);
+}
+
+.margin-left (@px) {
+  .px2rem(margin-left, @px);
+}
+
+.margin (@top, @right, @bottom, @left) {
+  .px2rem(margin-top, @top);
+  .px2rem(margin-right, @right);
+  .px2rem(margin-bottom, @bottom);
+  .px2rem(margin-left, @left);
+}
+
+.width(@px) {
+  .px2rem(width, @px);
+}
+
+.height(@px) {
+  .px2rem(height, @px);
+}
+
+.font-size(@px) {
+  .px2rem(font-size, @px);
+}
+
+.line-height(@px) {
+  .px2rem(line-height, @px);
+}
