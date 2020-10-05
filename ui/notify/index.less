@@ -1,0 +1,33 @@
+.elm-notify {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  z-index: 999;
+  overflow: hidden;
+  width: 100%;
+  .px2rem(height, 84);
+  color: #fff;
+  .px2rem(28);
+  .px2rem(line-height, 84);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: transform .2s linear;
+}
+
+.elm-notify-primary {
+  background-color: #1989fa;
+}
+
+.elm-notify-danger {
+  background-color: #ee0a24;
+}
+
+.elm-notify-success {
+  background-color: #07c160;
+}
+
+.elm-notify-warning {
+  background-color: #ff976a;
+}
