@@ -48,18 +48,45 @@
   .px2rem(margin-left, @left);
 }
 
-.width(@px) {
+.width (@px) {
   .px2rem(width, @px);
 }
 
-.height(@px) {
+.height (@px) {
   .px2rem(height, @px);
 }
 
-.font-size(@px) {
+.font-size (@px) {
   .px2rem(font-size, @px);
 }
 
-.line-height(@px) {
+.line-height (@px) {
   .px2rem(line-height, @px);
+}
+
+.single-line-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expand {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .margin(-20, -20, -20, -20);
+  }
+}
+
+.bg (@url) {
+  background-image: url(@url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
