@@ -38,7 +38,7 @@ export default {
     },
     probeType: {
       type: Number,
-      default: 0,
+      default: 1,
     },
     interval: {
       type: Number,
