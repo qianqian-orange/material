@@ -50,6 +50,8 @@ export default {
         increase: 'icon-add',
         decrease: 'icon-remove',
         'solid-arrow': 'icon-arrowup',
+        good: 'icon-good',
+        chat: 'icon-liaotian',
       },
     }
   },
