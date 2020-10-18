@@ -1,0 +1,96 @@
+.elm-button {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &--large {
+    width: 100%;
+    .font-size(32);
+    .height(100);
+  }
+
+  &--normal {
+    .padding(0, 30, 0, 30);
+    .font-size(28);
+    .height(64);
+  }
+
+  &--small {
+    .padding(0, 16, 0, 16);
+    .font-size(24);
+    .height(52);
+  }
+
+  &--mini {
+    .padding(0, 8, 0, 8);
+    .font-size(24);
+    .height(44);
+  }
+
+  &--primary {
+    border-color: @elmPrimaryColor;
+    color: #fff;
+    background-color: @elmPrimaryColor;
+  }
+
+  &--info {
+    border-color: @elmInfoColor;
+    color: #fff;
+    background-color: @elmInfoColor;
+  }
+
+  &--warning {
+    border-color: @elmWarningColor;
+    color: #fff;
+    background-color: @elmWarningColor;
+  }
+
+  &--danger {
+    border-color: @elmDangerColor;
+    color: #fff;
+    background-color: @elmDangerColor;
+  }
+
+  &--default {
+    border-color: #ebedf0;
+    color: #323233;
+    background-color: #fff;
+  }
+
+  &--plain {
+    background-color: #fff;
+
+    &.elm-button--primary {
+      color: @elmPrimaryColor;
+    }
+
+    &.elm-button--info {
+      color: @elmInfoColor;
+    }
+
+    &.elm-button--warning {
+      color: @elmWarningColor;
+    }
+
+    &.elm-button--danger {
+      color: @elmDangerColor;
+    }
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+
+  &--round {
+    border-radius: 999px;
+  }
+}

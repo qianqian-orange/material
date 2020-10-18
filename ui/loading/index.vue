@@ -3,19 +3,12 @@
     class="elm-loading"
     :style="{ textAlign: align }"
   >
-    <div
-      :style="styleObj"
-      class="elm-loading-icon"
-    >
-      <!-- 前两个参数指定图标的x,y 后两个参数指定图标的width, height -->
-      <svg viewBox="0 0 50 50">
-        <circle
-          cx="25"
-          cy="25"
-          r="20"
-        />
-      </svg>
-    </div>
+    <elm-icon
+      name="loading"
+      :font-size="size"
+      :color="variable.elmInfoColor"
+      stop-propagation
+    />
     <p class="elm-loading-text">
       {{ text }}
     </p>
@@ -23,7 +16,7 @@
 </template>
 
 <script>
-import px2rem from 'material/utils/px2rem'
+import variable from 'material/ui/common/var.less'
 
 export default {
   name: 'ElmLoading',
@@ -41,13 +34,10 @@ export default {
       default: 'center',
     },
   },
-  computed: {
-    styleObj() {
-      return {
-        width: px2rem(this.size),
-        height: px2rem(this.size),
-      }
-    },
+  data() {
+    return {
+      variable,
+    }
   },
 }
 </script>

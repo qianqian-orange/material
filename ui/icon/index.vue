@@ -1,5 +1,24 @@
 <template>
+  <div
+    v-if="name === 'loading'"
+    class="elm-icon elm-icon-loading"
+    :style="{
+      width: px2rem(fontSize),
+      height: px2rem(fontSize),
+      color,
+    }"
+  >
+    <!-- 前两个参数指定图标的x,y 后两个参数指定图标的width, height -->
+    <svg viewBox="0 0 50 50">
+      <circle
+        cx="25"
+        cy="25"
+        r="20"
+      />
+    </svg>
+  </div>
   <i
+    v-else
     :style="styleObj"
     :class="icon"
     class="elm-icon iconfont"
@@ -52,12 +71,16 @@ export default {
         'solid-arrow': 'icon-arrowup',
         good: 'icon-good',
         chat: 'icon-liaotian',
+        loading: 'icon-loading',
+        image: 'icon-image',
+        'damage-image': 'icon-financial_fail',
       },
+      px2rem,
     }
   },
   computed: {
     icon() {
-      return this.icons[this.name] ? this.icons[this.name] : this.name
+      return this.icons[this.name] || this.name
     },
     styleObj() {
       return {

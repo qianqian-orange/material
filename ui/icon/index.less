@@ -1,4 +1,43 @@
 .elm-icon {
   display: inline-block;
   line-height: 1;
+
+  &-loading {
+    animation: elm-rotate 2s linear infinite;
+
+    circle {
+      stroke: currentColor;
+      stroke-width: 3;
+      stroke-linecap: round;
+      fill: none;
+      animation: elm-circular 1.5s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes elm-rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes elm-circular {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -40;
+  }
+
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -120;
+  }
 }

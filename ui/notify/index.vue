@@ -1,5 +1,5 @@
 <template>
-  <div :class="[prefix, `${prefix}-${type}`].join(' ')">
+  <div :class="[prefix, `${prefix}--${type}`].join(' ')">
     <slot />
   </div>
 </template>

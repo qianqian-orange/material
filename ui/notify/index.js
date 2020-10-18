@@ -21,8 +21,8 @@ function core(type, message, duration) {
     el.innerText = message
     // 修改样式
     Object.keys(types).some((key) => {
-      if (el.classList.contains(`${prefix}-${key}`)) {
-        el.classList.replace(`${prefix}-${key}`, `${prefix}-${type}`)
+      if (el.classList.contains(`${prefix}--${key}`)) {
+        el.classList.replace(`${prefix}--${key}`, `${prefix}--${type}`)
         return true
       }
       return false
@@ -61,7 +61,7 @@ function createElement(type, message) {
   const el = document.createElement('div')
   el.innerText = message
   el.classList.add(prefix)
-  el.classList.add(`${prefix}-${type}`)
+  el.classList.add(`${prefix}--${type}`)
   el.addEventListener('transitionend', () => {
     if (hidden) {
       pending = false

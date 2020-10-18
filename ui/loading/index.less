@@ -1,50 +1,9 @@
 .elm-loading {
   .padding(30, 30, 30, 30);
-}
 
-.elm-loading-icon {
-  display: inline-block;
-  color: rgb(25, 137, 250);
-  animation: elm-rotate 2s linear infinite;
-
-  circle {
-    stroke: currentColor;
-    stroke-width: 3;
-    stroke-linecap: round;
-    fill: none;
-    animation: elm-circular 1.5s ease-in-out infinite;
-  }
-}
-
-.elm-loading-text {
-  .padding-top(20);
-  color: #999;
-  .font-size(28);
-}
-
-@keyframes elm-rotate {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes elm-circular {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-  }
-
-  50% {
-    stroke-dasharray: 90, 150;
-    stroke-dashoffset: -40;
-  }
-
-  100% {
-    stroke-dasharray: 90, 150;
-    stroke-dashoffset: -120;
+  &-text {
+    .padding-top(20);
+    color: #999;
+    .font-size(28);
   }
 }

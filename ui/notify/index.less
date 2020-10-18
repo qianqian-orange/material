@@ -14,20 +14,20 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   transition: transform .2s linear;
-}
 
-.elm-notify-primary {
-  background-color: #1989fa;
-}
+  &--primary {
+    background-color: @elmInfoColor;
+  }
 
-.elm-notify-danger {
-  background-color: #ee0a24;
-}
+  &--danger {
+    background-color: @elmDangerColor;
+  }
 
-.elm-notify-success {
-  background-color: #07c160;
-}
+  &--success {
+    background-color: @elmPrimaryColor;
+  }
 
-.elm-notify-warning {
-  background-color: #ff976a;
+  &--warning {
+    background-color: @elmWarningColor;
+  }
 }
