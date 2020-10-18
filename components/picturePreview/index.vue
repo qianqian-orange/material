@@ -108,7 +108,7 @@ export default {
       top: 0;
       .right(40);
       color: #fff;
-      background-color: transparent;
+      background-color: rgba(0, 0, 0, .3);
     }
   }
 
